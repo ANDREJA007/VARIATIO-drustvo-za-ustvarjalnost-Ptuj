@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="sl" data-lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VARIATIO – društvo za ustvarjalnost</title>
+  <meta name="description" content="VARIATIO – društvo za ustvarjalnost. Glasba, enologija in domači izdelki JEREBICA. OPERA NA GRADU, Masterclass, koncerti in kulinarika." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --olive:#3A4A3F; --beige:#EDE6D6; --gold:#CFA15D; --sage:#9DBF9E; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: var(--beige); color: var(--olive); }
+    .serif { font-family: "Playfair Display", Georgia, serif; }
+    .container { max-width: 1200px; }
+    .btn { background: var(--gold); color:#fff; padding:.6rem 1rem; border-radius: .75rem; font-weight:600; text-decoration:none; display:inline-block; text-align:center; }
+    .btn:hover { background:#b68d4f; }
+    .btn-secondary { background: var(--olive); color:#fff; padding:.45rem .8rem; border-radius:.6rem; font-weight:600; }
+    .btn-secondary:hover { opacity:.9; }
+    [data-lang-section] { display:none; }
+  </style>
+</head>
+<body>
+<header class="sticky top-0 z-40 border-b" style="border-color:var(--gold); background: rgba(237,230,214,.92); backdrop-filter: blur(6px);">
+  <div class="container mx-auto flex items-center justify-between px-4 py-3">
+    <div>
+      <h1 class="text-lg serif font-semibold leading-tight">VARIATIO – društvo za ustvarjalnost</h1>
+      <p class="text-xs" style="color:var(--sage)">Glasba • Enologija • Domači izdelki</p>
+    </div>
+    <nav class="hidden gap-6 md:flex text-sm items-center">
+      <a class="hover:underline" href="#izdelki">Izdelki</a>
+      <a class="hover:underline" href="#galerija">Galerija</a>
+      <a class="hover:underline" href="https://www.facebook.com/variatio" target="_blank">Facebook</a>
+      <a class="hover:underline" href="https://www.instagram.com/variatio" target="_blank">Instagram</a>
+      <button id="lang-sl" class="btn-secondary">SL</button>
+      <button id="lang-en" class="btn-secondary" style="background:#7f8e85;">EN</button>
+    </nav>
+    <a href="mailto:variatio.ptuj@gmail.com" class="btn">Pišite nam</a>
+  </div>
+</header>
+
+<main data-lang-section="sl" class="block">
+  <section class="container mx-auto px-4 py-14">
+    <h2 class="mb-3 text-3xl md:text-5xl serif font-semibold">Dobrodošli v VARIATIO</h2>
+    <p class="max-w-3xl leading-7">
+      VARIATIO smo ustanovili z namenom ustvarjalnosti na številnih področjih, kjer imamo odlična znanja in izkušnje:
+      organizacija <em>Masterclass for Opera Singers</em> Medea Iassonidi Ptuj z mednarodno zasedbo solistov v
+      Minoritskem samostanu na Ptuju; klasični koncerti od opere do muzikala in še več. Posebna strast in poslanstvo
+      pa sta kulinarika, vina in enologija. Pod blagovno znamko <strong>JEREBICA</strong> predstavljamo marmelade,
+      vložnine in žganja.
+    </p>
+  </section>
+
+  <section id="izdelki" class="container mx-auto px-4 py-10">
+    <h3 class="text-2xl serif font-semibold mb-4">Izdelki JEREBICA</h3>
+    <ul class="list-disc ml-6 leading-7">
+      <li>Bučna marmelada – posebna po aromi, izgledu in okusu</li>
+      <li>Slivova marmelada</li>
+      <li>Borovničeva marmelada</li>
+      <li>Orehovec</li>
+      <li>Žajbljevo žganje</li>
+      <li>Vložene kumarice, paprika, rdeča pesa, korenje</li>
+    </ul>
+  </section>
+
+  <section id="kontakt" class="container mx-auto px-4 py-10">
+    <h3 class="text-2xl serif font-semibold mb-4">Kontakt</h3>
+    <p>VARIATIO, društvo za ustvarjalnost<br>Ulica 5. prekomorske 14, 2250 Ptuj</p>
+    <p>Zakoniti zastopnik: Andreja Jerebic Erjavec</p>
+    <p>Telefon: +386 41 484 062 (Andreja)<br>+386 41 467 061 (Anja Brglez)</p>
+    <p>Email: <a class="underline" href="mailto:variatio.ptuj@gmail.com">variatio.ptuj@gmail.com</a></p>
+  </section>
+</main>
+
+<main data-lang-section="en">
+  <section class="container mx-auto px-4 py-14">
+    <h2 class="mb-3 text-3xl md:text-5xl serif font-semibold">Welcome to VARIATIO</h2>
+    <p class="max-w-3xl leading-7">
+      VARIATIO was founded to foster creativity in various fields where we have outstanding expertise and experience:
+      organizing the <em>Masterclass for Opera Singers</em> with Medea Iassonidi in Ptuj, featuring an international
+      cast of soloists at the Minorite Monastery in Ptuj; classical concerts from opera to musical theatre and more.
+      Our special passion and mission are gastronomy, wine, and oenology. Under the <strong>JEREBICA</strong> brand,
+      we present jams, preserves, and spirits.
+    </p>
+  </section>
+</main>
+
+<footer class="border-t" style="border-color:var(--gold); background: var(--beige);">
+  <div class="container mx-auto px-4 py-8 text-sm flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+    <p>© <span id="year"></span> VARIATIO – društvo za ustvarjalnost. Vse pravice pridržane.</p>
+    <div class="flex gap-4">
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
+      <a href="#izdelki" class="hover:underline">Izdelki</a>
+      <a href="#galerija" class="hover:underline">Galerija</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function setLang(lang){
+    document.querySelectorAll('[data-lang-section]').forEach(el => {
+      el.style.display = (el.getAttribute('data-lang-section') === lang) ? 'block' : 'none';
+    });
+  }
+  document.getElementById('lang-sl').addEventListener('click', () => setLang('sl'));
+  document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
+  setLang('sl');
+</script>
+</body>
+</html>
