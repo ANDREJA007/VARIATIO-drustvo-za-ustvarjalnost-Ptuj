@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="sl" data-lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VARIATIO – društvo za ustvarjalnost</title>
+  <meta name="description" content="VARIATIO – društvo za ustvarjalnost. Glasba, enologija in domači izdelki JEREBICA. OPERA NA GRADU, Masterclass in še več." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --olive:#3A4A3F; --beige:#EDE6D6; --gold:#CFA15D; --sage:#9DBF9E; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: var(--beige); color: var(--olive); }
+    .serif { font-family: "Playfair Display", Georgia, serif; }
+    .container { max-width: 1200px; }
+    .btn { background: var(--gold); color:#fff; padding:.6rem 1rem; border-radius: .75rem; font-weight:600; text-decoration:none; display:inline-block; text-align:center; }
+    .btn:hover { background:#b68d4f; }
+    .btn-secondary { background: var(--olive); color:#fff; padding:.45rem .8rem; border-radius:.6rem; font-weight:600; }
+    .btn-secondary[aria-pressed="false"] { background:#7f8e85; }
+    .chip{ display:inline-block; padding:.25rem .5rem; border:1px solid var(--sage); border-radius:999px; font-size:.75rem; color:var(--olive); background:#fff; }
+    .card{ border:1px solid var(--sage); border-radius:1rem; background:#fff; }
+    a.link{ color: var(--olive); text-decoration: underline; text-underline-offset: 2px; }
+    a.link:hover{ opacity:.9; }
+    [data-lang-section]{ display:none; }
+  </style>
+</head>
+<body>
+<header class="sticky top-0 z-40 border-b" style="border-color:var(--gold); background: rgba(237,230,214,.92); backdrop-filter: blur(6px);">
+  <div class="container mx-auto flex items-center justify-between px-4 py-3">
+    <div>
+      <h1 class="text-lg serif font-semibold leading-tight">VARIATIO – društvo za ustvarjalnost</h1>
+      <p class="text-xs" style="color:var(--sage)">Glasba • Enologija • Domači izdelki</p>
+    </div>
+    <nav class="hidden gap-6 md:flex text-sm items-center">
+      <a class="hover:underline" href="#izdelki">Izdelki</a>
+      <a class="hover:underline" href="#galerija">Galerija</a>
+      <a class="hover:underline" href="#kontakt">Kontakt</a>
+      <a class="hover:underline" href="https://www.facebook.com/variatio" target="_blank" rel="noopener">Facebook</a>
+      <a class="hover:underline" href="https://www.instagram.com/variatio" target="_blank" rel="noopener">Instagram</a>
+      <button id="lang-sl" class="btn-secondary" aria-pressed="true">SL</button>
+      <button id="lang-en" class="btn-secondary" aria-pressed="false">EN</button>
+    </nav>
+    <a href="mailto:variatio.ptuj@gmail.com" class="btn">Pišite nam</a>
+  </div>
+</header>
+
+<!-- ============ SLO ============ -->
+<main data-lang-section="sl" class="block">
+  <!-- HERO -->
+  <section class="container mx-auto px-4 py-14">
+    <h2 class="mb-3 text-3xl md:text-5xl serif font-semibold">Dobrodošli v VARIATIO</h2>
+    <p class="max-w-3xl leading-7">
+      VARIATIO smo ustanovili z namenom ustvarjalnosti na številnih področjih, kjer imamo odlična znanja in izkušnje:
+      organizacija <em>Masterclass for Opera Singers</em> Medea Iassonidi Ptuj z mednarodno zasedbo solistov v
+      Minoritskem samostanu na Ptuju; klasični koncerti od opere do muzikala in še več. Posebna strast in poslanstvo
+      pa sta kulinarika, vina in enologija. Pod blagovno znamko <strong>JEREBICA</strong> predstavljamo marmelade,
+      vložnine in žganja.
+    </p>
+    <div class="mt-4 space-x-2">
+      <span class="chip">OPERA NA GRADU</span>
+      <span class="chip">Masterclass</span>
+      <span class="chip">JEREBICA</span>
+    </div>
+  </section>
+
+  <!-- IZDELKI -->
+  <section id="izdelki" class="border-t" style="border-color:var(--gold); background: var(--beige);">
+    <div class="container mx-auto px-4 py-14">
+      <h3 class="mb-6 text-2xl serif font-semibold">Izdelki JEREBICA</h3>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Bučna marmelada</h4><p class="mt-2 text-sm">Naša največja zvezda – izjemen videz, aroma in okus.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Slivova marmelada</h4><p class="mt-2 text-sm">Klasična, polnega okusa.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Borovničeva marmelada</h4><p class="mt-2 text-sm">Poln okus gozdnih borovnic.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Orehovec</h4><p class="mt-2 text-sm">Domače žganje iz orehov po tradicionalnem receptu.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Žajbljevo žganje</h4><p class="mt-2 text-sm">Aromatično žganje z blagim okusom žajblja.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Vložnine</h4><p class="mt-2 text-sm">Kumarice, paprika, rdeča pesa, korenje – hrustljavo in naravno.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIJA POVEZAV -->
+  <section id="galerija" class="container mx-auto px-4 py-12">
+    <h3 class="mb-4 text-2xl serif font-semibold">Foto galerija iz dogodkov</h3>
+    <ul class="list-disc list-inside leading-7">
+      <li><a class="link" href="https://visitborl.si" target="_blank" rel="noopener">OPERA NA GRADU BORL</a></li>
+      <li><a class="link" href="https://operamasterclass.si" target="_blank" rel="noopener">Masterclass Medea Iassonidi</a></li>
+      <li><a class="link" href="https://www.minoriti.si" target="_blank" rel="noopener">OPERA V MINORITIH – Maribor</a></li>
+      <li><a class="link" href="https://www.zavod973.si" target="_blank" rel="noopener">CANZONE IN OPERA – Škofja Loka</a></li>
+    </ul>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="container mx-auto px-4 py-14">
+    <h3 class="mb-6 text-2xl serif font-semibold">Kontakt</h3>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="space-y-2">
+        <p><strong>Naslov:</strong> Ulica 5. prekomorske 14, 2250 Ptuj, Slovenija</p>
+        <p><strong>Zakoniti zastopnik:</strong> Andreja Jerebic Erjavec</p>
+        <p><strong>Telefon:</strong> +386 41 484 062 (Andreja) | +386 41 467 061 (Anja Brglez)</p>
+        <p><strong>E‑pošta:</strong> <a class="link" href="mailto:variatio.ptuj@gmail.com">variatio.ptuj@gmail.com</a></p>
+        <p><strong>Facebook:</strong> <a class="link" href="https://www.facebook.com/variatio" target="_blank" rel="noopener">VARIATIO</a></p>
+        <p><strong>Instagram:</strong> <a class="link" href="https://www.instagram.com/variatio" target="_blank" rel="noopener">@variatio</a></p>
+        <p><strong>Družbena omrežja:</strong> Anja Brglez (anja.brglez123@gmail.com)</p>
+      </div>
+      <form class="card p-6 shadow-sm">
+        <div class="grid gap-4">
+          <input type="text" placeholder="Ime in priimek" class="w-full rounded-xl border px-3 py-2" />
+          <input type="email" placeholder="E‑pošta" class="w-full rounded-xl border px-3 py-2" />
+          <textarea placeholder="Vaše sporočilo / naročilo" rows="6" class="w-full rounded-xl border px-3 py-2"></textarea>
+          <a href="mailto:variatio.ptuj@gmail.com" class="btn">Pošlji e‑pošto</a>
+          <p class="text-xs" style="color:#5b6b60">Opomba: gumb odpre vaš e‑poštni program. Po želji kasneje dodamo pravi obrazec.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============ EN ============ -->
+<main data-lang-section="en">
+  <!-- HERO -->
+  <section class="container mx-auto px-4 py-14">
+    <h2 class="mb-3 text-3xl md:text-5xl serif font-semibold">Welcome to VARIATIO</h2>
+    <p class="max-w-3xl leading-7">
+      VARIATIO was founded to foster creativity across multiple fields in which we have outstanding expertise and experience:
+      organising the <em>Masterclass for Opera Singers</em> with Medea Iassonidi in Ptuj, featuring an international cast
+      of soloists at the Minorite Monastery in Ptuj; presenting classical concerts ranging from opera to musical theatre and beyond.
+      Our passion and mission also embrace gastronomy, wine and the art of oenology. Under the <strong>JEREBICA</strong> brand
+      we present jams, preserves and spirits.
+    </p>
+    <div class="mt-4 space-x-2">
+      <span class="chip">OPERA NA GRADU</span>
+      <span class="chip">Masterclass</span>
+      <span class="chip">JEREBICA</span>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products-en" class="border-t" style="border-color:var(--gold); background: var(--beige);">
+    <div class="container mx-auto px-4 py-14">
+      <h3 class="mb-6 text-2xl serif font-semibold">JEREBICA Products</h3>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Pumpkin Jam</h4><p class="mt-2 text-sm">Our showpiece – distinctive aroma, look and taste.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Plum Jam</h4><p class="mt-2 text-sm">A classic, rich flavour.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Blueberry Jam</h4><p class="mt-2 text-sm">Full woodland blueberry taste.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Walnut Liqueur</h4><p class="mt-2 text-sm">Traditional homemade digestif.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Sage Liqueur</h4><p class="mt-2 text-sm">Aromatic, delicately herbal.</p></div>
+        <div class="card p-6 shadow-sm"><h4 class="text-lg serif font-semibold">Pickled Vegetables</h4><p class="mt-2 text-sm">Cucumbers, peppers, beetroot, carrots – crisp and natural.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY LINKS -->
+  <section class="container mx-auto px-4 py-12">
+    <h3 class="mb-4 text-2xl serif font-semibold">Photo Gallery & Links</h3>
+    <ul class="list-disc list-inside leading-7">
+      <li><a class="link" href="https://visitborl.si" target="_blank" rel="noopener">OPERA NA GRADU BORL</a></li>
+      <li><a class="link" href="https://operamasterclass.si" target="_blank" rel="noopener">Masterclass Medea Iassonidi</a></li>
+      <li><a class="link" href="https://www.minoriti.si" target="_blank" rel="noopener">OPERA IN THE MINORITE CHURCH – Maribor</a></li>
+      <li><a class="link" href="https://www.zavod973.si" target="_blank" rel="noopener">CANZONE IN OPERA – Škofja Loka</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="container mx-auto px-4 py-14">
+    <h3 class="mb-6 text-2xl serif font-semibold">Contact</h3>
+    <p><strong>Address:</strong> Ulica 5. prekomorske 14, 2250 Ptuj, Slovenia</p>
+    <p><strong>Legal representative:</strong> Andreja Jerebic Erjavec</p>
+    <p><strong>Phone:</strong> +386 41 484 062 (Andreja) | +386 41 467 061 (Anja Brglez)</p>
+    <p><strong>Email:</strong> <a class="link" href="mailto:variatio.ptuj@gmail.com">variatio.ptuj@gmail.com</a></p>
+  </section>
+</main>
+
+<footer class="border-t" style="border-color:var(--gold); background: var(--beige);">
+  <div class="container mx-auto px-4 py-8 text-sm flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+    <p>© <span id="year"></span> VARIATIO – društvo za ustvarjalnost. Vse pravice pridržane.</p>
+    <div class="flex gap-4">
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
+      <a href="#izdelki" class="hover:underline">Izdelki</a>
+      <a href="#galerija" class="hover:underline">Galerija</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function setLang(lang){
+    document.querySelectorAll('[data-lang-section]').forEach(el => {
+      el.style.display = (el.getAttribute('data-lang-section') === lang) ? 'block' : 'none';
+    });
+    document.getElementById('lang-sl').setAttribute('aria-pressed', lang==='sl');
+    document.getElementById('lang-en').setAttribute('aria-pressed', lang==='en');
+  }
+  document.getElementById('lang-sl').addEventListener('click', () => setLang('sl'));
+  document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
+  setLang('sl');
+</script>
+</body>
+</html>
